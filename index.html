@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+<h2>Issue Tracker</h2>
+<div class="card">
+ <div class="container">
+    <div class="one">
+    <label for="issueTitle"><b>Title</b></label></br>
+    <input type="text" placeholder="Enter Title" name="issueTitle" id="issueTitle" required>
+</div>
+<div class="two">
+    <label for="issueDescription"><b>Description</b></label></br>
+    <textarea placeholder="Enter Description" rows="1.5" cols="20" name="issueDescription" id="issueDescription" required></textarea>
+</div>
+    <label for="issueStatus"><b>Status</b></label></br>
+    <select id="issueStatus" name="issueStatus">
+      <option value="Open">Open</option>
+      <option value="In Progress">In Progress</option>
+      <option value="Resolved">Resolved</option>
+      <option value="Closed">Closed</option>
+    </select>
+ </div>
+</div>
+
+<button id="addIssue">Add Issue</button>
+<h3>Issue List:</h3>
+<ul id="issueList"></ul>
+</center>
+
+<script src="scropt.js"></script>
+</body>
+</html>
